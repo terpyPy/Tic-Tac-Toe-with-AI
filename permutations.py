@@ -50,8 +50,9 @@ def lookAtAllMoves(t):
     print(currentTime) 
     #p(allPossibilities) 
     return allPossibilities   
-
-
+x= 'x'
+y = 'y'
+lookAtAllMoves([[x],[y],[y],[x],[y],[x],[y],[x],[y]])
 
 #print the total permutations and total time to calculate
 #
