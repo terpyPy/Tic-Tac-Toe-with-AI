@@ -95,7 +95,7 @@ def main():
             [' ', ' ', ' '],
             [' ', ' ', ' '],
             ]
-        playerLetter, computerLetter = inputPlayerLetter()
+        playerLetter, computerLetter = 'X', 'O'
         turn = whoGoesFirst()
         print('The ' + turn + ' will go first.')
         gameIsPlaying = True
@@ -104,7 +104,10 @@ def main():
             if turn == 'player':
                 # Player's turn.
                 drawBoard(theBoard)
+                #move = getComputerMove(theBoard, playerLetter)
+                print('cpu thinks your best move is: ', getComputerMove(theBoard, playerLetter))
                 move = getPlayerMove(theBoard)
+                
                 makeMove(theBoard, playerLetter, move)
 
                 if isWinner(theBoard, playerLetter):

@@ -161,7 +161,7 @@ def findBestMove(board, player) :
                     bestVal = moveVal
  
     print("The value of the best Move is :", bestVal)
-    print()
+    print(bestMove)
     return bestMove
 # Driver code
 board = [
