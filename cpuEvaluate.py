@@ -164,15 +164,6 @@ def findBestMove(board, player) :
     print(bestMove)
     return bestMove
 # Driver code
-board = [
-    [ 'X', 'O', 'X' ],
-    [ 'O', 'O', 'X' ],
-    [ ' ', ' ', ' ' ]
-]
- 
-bestMove = findBestMove(board, 'X')
- 
-print("The Optimal Move is :")
-print("ROW:", bestMove[0], " COL:", bestMove[1])
+
  
 # This code is contributed by divyesh072019
