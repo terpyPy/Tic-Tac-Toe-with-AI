@@ -1,5 +1,8 @@
+# Cameron Kerley
+# current build date 11/1/2021 v_2
 import random
 import cpuEvaluate as eval
+from bad_version import TTTWith_badcpu as badCPU
 def drawBoard(b):
     #
     # This function prints out the board that it was passed
@@ -100,15 +103,18 @@ def main():
         print('The ' + turn + ' will go first.')
         gameIsPlaying = True
         print(' --Total Wins:', wins, ' --Total losses:',losses,  '--total ties:', ties)
+        print('player is '+ playerLetter)
+        drawBoard(theBoard)
         while gameIsPlaying:
             if turn == 'player':
+                print("player turn")
                 # Player's turn.
-                drawBoard(theBoard)
-                #move = getComputerMove(theBoard, playerLetter)
-                print('cpu thinks your best move is: ', getComputerMove(theBoard, playerLetter))
                 move = getPlayerMove(theBoard)
-                
+                # print('cpu thinks your best move is: ', getComputerMove(theBoard, playerLetter))
+                #move = compileMove(badCPU.getComputerMove(theBoard, playerLetter))
+                 
                 makeMove(theBoard, playerLetter, move)
+                drawBoard(theBoard)
 
                 if isWinner(theBoard, playerLetter):
                     drawBoard(theBoard)
@@ -126,9 +132,11 @@ def main():
 
             else:
                 # Computer's turn.
-                move = getComputerMove(theBoard, computerLetter)
+                print("Computer's turn")
+                # move = getComputerMove(theBoard, computerLetter)
+                move = compileMove(badCPU.getComputerMove(theBoard, computerLetter))
                 makeMove(theBoard, computerLetter, move)
-
+                drawBoard(theBoard)
                 if isWinner(theBoard, computerLetter):
                     drawBoard(theBoard)
                     print('The computer has beaten you! You lose.')
@@ -145,4 +153,6 @@ def main():
             
         if not playAgain():
             break
-main()
+if __name__ == '__main__':
+    # if not imported as a module run the main loop
+    main()

@@ -12,7 +12,7 @@ def isMovesLeft(board) :
     return False
  
 # This is the evaluation function as discussed
-# in the previous article ( http://goo.gl/sJgv68 )
+# in this source link ( http://goo.gl/sJgv68 )
 def evaluate(b, player) :
     if player == 'X':
         opponent = 'O'
@@ -166,4 +166,4 @@ def findBestMove(board, player) :
 # Driver code
 
  
-# This code is contributed by divyesh072019
+# this code is contributed by divyesh072019
