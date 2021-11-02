@@ -109,9 +109,9 @@ def main():
             if turn == 'player':
                 print("player turn")
                 # Player's turn.
-                move = getPlayerMove(theBoard)
+                #move = getPlayerMove(theBoard)
                 # print('cpu thinks your best move is: ', getComputerMove(theBoard, playerLetter))
-                #move = compileMove(badCPU.getComputerMove(theBoard, playerLetter))
+                move = compileMove(badCPU.getComputerMove(theBoard, playerLetter))
                  
                 makeMove(theBoard, playerLetter, move)
                 drawBoard(theBoard)
@@ -133,8 +133,8 @@ def main():
             else:
                 # Computer's turn.
                 print("Computer's turn")
-                # move = getComputerMove(theBoard, computerLetter)
-                move = compileMove(badCPU.getComputerMove(theBoard, computerLetter))
+                move = getComputerMove(theBoard, computerLetter)
+                # move = compileMove(badCPU.getComputerMove(theBoard, computerLetter))
                 makeMove(theBoard, computerLetter, move)
                 drawBoard(theBoard)
                 if isWinner(theBoard, computerLetter):

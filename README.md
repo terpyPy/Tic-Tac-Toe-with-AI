@@ -2,6 +2,7 @@
 # Tic-Tac-Toe-with-AI
 Try making your own version before lookin at my final version that uses the textbook implemetation. I would instead look at the bad version to know what works, but is self admittedly lazy at the same time.
 
+https://youtu.be/-9Uw-C9Uowc
 
 ![howMinMaxWorks](https://user-images.githubusercontent.com/66324329/115135275-6245c980-9fe5-11eb-8a4b-5d398c7006db.png)
 
