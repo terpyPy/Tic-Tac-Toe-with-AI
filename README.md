@@ -13,14 +13,4 @@ play Tic Tac Toe vs a cpu, starting player is random.
 can be changed to play cpu vs cpu. both the "bad" and "good" versions of the cpu can be played
 
 # updated v2
-the two newest commits are a good implementation of the cpu and the game state vs a human player 
-
-TTT is the game script the other is the eval script for the cpu.
-
-
-# The CPU's for the game
-Run TTT-GameState.py to play, 
-
-I have 2 different cpu's 
-
-nether can be beaten both are completely different approaches to writing the algorithm which will tie or beat all human players
+I have 2 different cpu's, nether can beat the other. both are completely different approaches to writing the algorithm which will tie or beat each other. Nothing can win against the min maxing CPU and it can't beat the move pruning CPU, they just tie. However, humans can beat the move pruning CPU and it can also beat itself. This was to demonstrate that minmax is sufficient for optimal play, but not necessary to win.
